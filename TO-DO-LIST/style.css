@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	width: 10px;
+	background: #ffb6b6;
+	border-left: 0 solid #ffc0c0;
+	border-right: 0 solid #ffb6b6;
+	box-shadow: inset 0 0 5px #ffbcbc;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ffbdbd;
+	width: 0;
+	height: 35%;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+body {
+	background: #ffe1e1;
+}
+
+.header {
+	background: #ffc3c3;
+	padding: 30px 40px;
+	color: #ff0000b7;
+	text-align: center;
+}
+h1{
+    text-align: center;
+    background-color:#ffc3c3 ;
+    padding-top: 10px;
+    color:tomato;
+	font-size:70px;
+}
+
+.header::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+input[type="text"] {
+	position: relative;
+	border: none;
+	border-radius: 10px;
+	width: 75%;
+	padding: 20px;
+	float: left;
+	font-size: 16px;
+	outline: none;
+    box-shadow: 0px 0px 15px black;
+}
+
+.addBtn {
+	padding: 20px;
+	width: 25%;
+	background: #000000;
+	color: #fff7f7;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s ease;
+	border-radius:10px;
+	font-weight: bold;
+    box-shadow: 0px 0px 15px black;
+}
+
+.addBtn:hover {
+	background: #fd7070;
+}
+
+ol,
+ul {
+	padding-left: 0;
+}
+
+ul li {
+	position: relative;
+	cursor: pointer;
+	list-style: none;
+	background-color: whitesmoke;
+	font-size: 18px;
+	padding:25px;
+	transition: all 0.2s ease;
+	user-select: none;
+    border: 0.5px solid black;
+}
+
+ul li:nth-child(odd) {
+	background-color:whitesmoke
+}
+
+ul li:hover {
+	background: #ff8b8b;
+}
+
+ul li.checked {
+	background: rgba(166, 255, 125, 0.418);
+	text-decoration: line-through;
+}
+
+ul li.checked::before {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-color: rgba(0, 255, 85, 0.479);
+	border-width: 0 4px 4px 0;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%) rotate(45deg);
+	height: 20px;
+	width: 10px;
+}
+
+.close {
+	position: absolute;
+	font-weight: bold;
+	font-size: xx-large;
+	text-align: center;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 11px 16px;
+}
+
+.close:hover {
+	background: red;
+	color: #fff;
+}
+
+.sa-button-container{
+	display: none;
+}
